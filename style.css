@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes translate {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-8px);
+  }
+}
+
+.icon-move:hover {
+  animation-name: translateIcon;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  transform: rotate(90deg);
+}
+
+@keyframes translateIcon {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-3px);
+  }
+}
+.email-move:hover {
+  animation-name: translateEmail;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes translateEmail {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-3px);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #495670;
+  border-radius: 15px;
+  height: 10px;
+}
+
+.falling {
+  animation-name: rain;
+  animation-fill-mode: forwards;
+  animation-duration: 500ms;
+}
+
+.up {
+  animation-name: up;
+  /* animation-fill-mode: backwards; */
+  animation-duration: 500ms;
+}
+
+@keyframes rain {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes up {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.rotation120 {
+  animation-name: rotation120;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+}
+.rotation60 {
+  animation-name: rotation60;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+  top: 7px;
+}
+
+@keyframes rotation60 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(60deg);
+  }
+}
+@keyframes rotation120 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(120deg);
+  }
+}
+
+.rotation60to0 {
+  animation-name: rotation60to0;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotation60to0 {
+  from {
+    transform: rotate(60deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+.rotation120to0 {
+  animation-name: rotation120to0;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotation120to0 {
+  from {
+    transform: rotate(120deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.baharAao {
+  animation-name: baharAao;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+  display: block;
+}
+
+.andarJao {
+  animation-name: andarJao;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+}
+
+.navtoTop {
+  animation-name: navtoTop;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+}
+.navtoDown {
+  animation-name: navtoDown;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes baharAao {
+  from {
+    right: -20rem;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes andarJao {
+  from {
+    right: 0;
+  }
+  to {
+    right: -20rem;
+    display: none;
+  }
+}
+@keyframes navtoTop {
+  from {
+    top: 0;
+  }
+  to {
+    top: -95px;
+  }
+}
+@keyframes navtoDown {
+  from {
+    top: -95px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+/* .card:hover{
+    animation-name: translate;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+} */
