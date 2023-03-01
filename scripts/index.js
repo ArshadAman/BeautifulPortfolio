@@ -1,9 +1,11 @@
-// window.onload = function () {
-//   document.getElementById("1st").focus();
-//   scrollTo(0, 0);
-// };
+window.addEventListener("DOMContentLoaded", (e)=>{
+  let btn = document.getElementById("1st");
+  btn.click();
+  btn.focus();
+  console.log(document.getElementById("1st"))
+})
 
-function showOrganisation(id) {
+function showOrg(id) {
   let org = document.getElementById(id);
   let allJob = document.getElementsByClassName("job-desc");
   let arr = Array.from(allJob);
