@@ -1,291 +1,245 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <script defer src="/scripts/index.js"></script>
-    <title>Arshad Aman</title>
-  </head>
 
-  <body class="bg-[#0a192f] overflow-x-hidden md:overflow-x-auto">
-    <!-- <div class="loadingPage bg-[#020c1b] md:h-[100vh] md:w-[100%] h-[150vh] w-[170vw] overflow-hidden flex justify-center items-center"
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style.css" />
+  <script defer src="/scripts/index.js"></script>
+  <title>Arshad Aman</title>
+</head>
+
+<body class="bg-[#0a192f] overflow-x-hidden md:overflow-x-auto">
+  <!-- <div class="loadingPage bg-[#020c1b] md:h-[100vh] md:w-[100%] h-[150vh] w-[170vw] overflow-hidden flex justify-center items-center"
         id="loadingScreen">
         <img src="/Images/A.gif" alt="" class="w-60 h-60">
     </div> -->
 
-    <!-- .........................Navbar........................  -->
-    <div class="main" id="main">
-      <div class="nav bg-[#0a192f] sticky z-[100]" id="nav">
-        <nav class="flex items-center justify-between md:pl-5 md:pr-10 pr-3">
-          <a href="#"
-            ><img
-              src="/Images/logo.png"
-              alt="looking"
-              class="md:w-24 md:h-24 w-28 h-28"
-          /></a>
-          <div
-            class="bars flex-col items-end space-y-2 md:hidden flex relative"
-            id="cross"
-          >
-            <div
-              class="one bg-[#64ffda] w-7 h-[4px] rounded rotation60to0 z-50 absolute"
-              id="sixty"
-            ></div>
-            <div
-              class="one bg-[#64ffda] w-7 h-[4px] rounded rotation120to0 z-50 absolute"
-              id="one-20"
-            ></div>
-          </div>
-          <ul class="md:flex hidden space-x-8 items-center">
-            <a href="#about" class="nav-items">
-              <li class="text-[#8892b0] text-sm font-semibold">
-                <span class="text-[#53d5ba] font-mono font-normal">01. </span
-                >About
+  <!-- .........................Navbar........................  -->
+  <div class="main" id="main">
+    <div class="nav bg-[#0a192f] sticky z-[100]" id="nav">
+      <nav class="flex items-center justify-between md:pl-5 md:pr-10 pr-3">
+        <a href="#"><img src="/Images/logo.png" alt="looking" class="md:w-24 md:h-24 w-28 h-28" /></a>
+        <div class="bars flex-col items-end space-y-2 md:hidden flex relative" id="cross">
+          <div class="one bg-[#64ffda] w-7 h-[4px] rounded rotation60to0 z-50 absolute" id="sixty"></div>
+          <div class="one bg-[#64ffda] w-7 h-[4px] rounded rotation120to0 z-50 absolute" id="one-20"></div>
+        </div>
+        <ul class="md:flex hidden space-x-8 items-center">
+          <a href="#about" class="nav-items">
+            <li class="text-[#8892b0] text-sm font-semibold">
+              <span class="text-[#53d5ba] font-mono font-normal">01. </span>About
+            </li>
+          </a>
+          <a href="#experience" class="nav-items">
+            <li class="text-[#8892b0] text-sm font-semibold">
+              <span class="text-[#53d5ba] font-mono font-normal">02. </span>Experience
+            </li>
+          </a>
+          <a href="#work" class="nav-items">
+            <li class="text-[#8892b0] text-sm font-semibold">
+              <span class="text-[#53d5ba] font-mono font-normal">03. </span>Work
+            </li>
+          </a>
+          <a href="#contact" class="nav-items">
+            <li class="text-[#8892b0] text-sm font-semibold">
+              <span class="text-[#53d5ba] font-mono font-normal">04. </span>Contact
+            </li>
+          </a>
+          <a href="https://drive.google.com/file/d/1qRgA2dB9mFEjEOn2gTNItL_2dqkja4ki/view?usp=sharing"
+            target="_blank">
+            <button
+              class="bg-[#0a192f] hover:bg-[#133040] outline-[#53d5ba] font-mono text-[#53d5ba] py-2 px-5 rounded border-2 border-[#53d5ba] text-sm nav-items">
+              Resume
+            </button></a>
+        </ul>
+        <div
+          class="mobile-menu-items bg-[#112240] w-[70%] h-[100vh] absolute -right-80 px-10 py-20 z-10 top-0 md:hidden hidden"
+          id="mmi">
+          <ul class="relative z-50 flex flex-col items-center space-y-7 my-10">
+            <a href="#about" class="" onclick="andarJao()">
+              <li class="flex flex-col items-center space-y-1">
+                <p class="text-[#53d5ba] font-mono text-lg">01.</p>
+                <p class="text-[#8892b0] text-xl">About</p>
               </li>
             </a>
-            <a href="#experience" class="nav-items">
-              <li class="text-[#8892b0] text-sm font-semibold">
-                <span class="text-[#53d5ba] font-mono font-normal">02. </span
-                >Experience
+            <a href="#experience" class="" onclick="andarJao()">
+              <li class="flex flex-col items-center space-y-1">
+                <p class="text-[#53d5ba] font-mono text-lg">02.</p>
+                <p class="text-[#8892b0] text-xl">Experience</p>
               </li>
             </a>
-            <a href="#work" class="nav-items">
-              <li class="text-[#8892b0] text-sm font-semibold">
-                <span class="text-[#53d5ba] font-mono font-normal">03. </span
-                >Work
+            <a href="#work" class="" onclick="andarJao()">
+              <li class="flex flex-col items-center space-y-1">
+                <p class="text-[#53d5ba] font-mono text-lg">03.</p>
+                <p class="text-[#8892b0] text-xl">Work</p>
               </li>
             </a>
-            <a href="#contact" class="nav-items">
-              <li class="text-[#8892b0] text-sm font-semibold">
-                <span class="text-[#53d5ba] font-mono font-normal">04. </span
-                >Contact
+            <a href="#contact" class="" onclick="andarJao()">
+              <li class="flex flex-col items-center space-y-1">
+                <p class="text-[#53d5ba] font-mono text-lg">04.</p>
+                <p class="text-[#8892b0] text-xl">Contact</p>
               </li>
             </a>
-            <a
-              href="https://drive.google.com/file/d/1qRgA2dB9mFEjEOn2gTNItL_2dqkja4ki/view?usp=sharing"
-              target="_blank"
-            >
+            <a href="https://drive.google.com/file/d/1qRgA2dB9mFEjEOn2gTNItL_2dqkja4ki/view?usp=sharing"
+              target="_blank">
               <button
-                class="bg-[#0a192f] hover:bg-[#133040] outline-[#53d5ba] font-mono text-[#53d5ba] py-2 px-5 rounded border-2 border-[#53d5ba] text-sm nav-items"
-              >
+                class="bg-[#0a192f] hover:bg-[#133040] outline-[#53d5ba] font-mono text-[#53d5ba] py-4 px-10 rounded border-2 border-[#53d5ba] text-sm">
                 Resume
-              </button></a
-            >
+              </button></a>
           </ul>
-          <div
-            class="mobile-menu-items bg-[#112240] w-[70%] h-[100vh] absolute -right-80 px-10 py-20 z-10 top-0 md:hidden hidden"
-            id="mmi"
-          >
-            <ul
-              class="relative z-50 flex flex-col items-center space-y-7 my-10"
-            >
-              <a href="#about" class="" onclick="andarJao()">
-                <li class="flex flex-col items-center space-y-1">
-                  <p class="text-[#53d5ba] font-mono text-lg">01.</p>
-                  <p class="text-[#8892b0] text-xl">About</p>
-                </li>
-              </a>
-              <a href="#experience" class="" onclick="andarJao()">
-                <li class="flex flex-col items-center space-y-1">
-                  <p class="text-[#53d5ba] font-mono text-lg">02.</p>
-                  <p class="text-[#8892b0] text-xl">Experience</p>
-                </li>
-              </a>
-              <a href="#work" class="" onclick="andarJao()">
-                <li class="flex flex-col items-center space-y-1">
-                  <p class="text-[#53d5ba] font-mono text-lg">03.</p>
-                  <p class="text-[#8892b0] text-xl">Work</p>
-                </li>
-              </a>
-              <a href="#contact" class="" onclick="andarJao()">
-                <li class="flex flex-col items-center space-y-1">
-                  <p class="text-[#53d5ba] font-mono text-lg">04.</p>
-                  <p class="text-[#8892b0] text-xl">Contact</p>
-                </li>
-              </a>
-              <a
-                href="https://drive.google.com/file/d/1qRgA2dB9mFEjEOn2gTNItL_2dqkja4ki/view?usp=sharing"
-                target="_blank"
-              >
-                <button
-                  class="bg-[#0a192f] hover:bg-[#133040] outline-[#53d5ba] font-mono text-[#53d5ba] py-4 px-10 rounded border-2 border-[#53d5ba] text-sm"
-                >
-                  Resume
-                </button></a
-              >
+        </div>
+      </nav>
+    </div>
+
+    <div class="left-icons fixed md:flex hidden flex-col px-14 items-center space-y-7 bottom-0" id="leftline">
+      <ul class="flex flex-col text-[#8892b0] space-y-7">
+        <li class="hover:text-[#64ffda] icon-move">
+          <a href="https://github.com/ArshadAman/">
+            <i class="fab fa-github text-xl hover:text-[#60f6d3]"></i>
+          </a>
+        </li>
+        <li class="hover:text-[#64ffda] icon-move">
+          <a href="https://www.instagram.com/me_arshadaman/">
+
+            <i class="fab fa-instagram text-xl"></i>
+          </a>
+        </li>
+        <li class="hover:text-[#64ffda] icon-move">
+          <a href="https://twitter.com/MeArshadaman">
+            <i class="fab fa-twitter text-xl"></i>
+          </a>
+        </li>
+        <li class="hover:text-[#64ffda] icon-move">
+          <a href="https://www.linkedin.com/in/arshad-aman/">
+            <i class="fab fa-linkedin-in text-xl"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="h-24 w-[2px] bg-[#ccd6f6]"></div>
+    </div>
+
+    <div class="right-icons fixed md:flex hidden flex-col px-0 items-center space-y-28 bottom-0 right-0" id="rightline">
+      <div class="mail flex flex-col rotate-90">
+        <a href="mailto:arshadaman202@gmail.com"
+          class="text-[#8892b0] hover:text-[#64ffda] email-move text-sm font-mono">arshadaman202@gmail.com</a>
+      </div>
+      <div class="h-24 w-[2px] bg-[#ccd6f6]"></div>
+    </div>
+
+    <!-- .................................Content Box............................  -->
+
+    <section class="content-box md:px-60 px-10 pt-20 pb-10" id="content">
+      <!-- Intro -->
+      <div class="intro">
+        <div class="mainhead space-y-3">
+          <p class="text-[#53d5ba] text-lg font-semibold intros opacity-0">
+            Hi, my name is
+          </p>
+          <h1 class="text-[#ccd6f6] font-black md:text-[80px] text-6xl font-mono intros opacity-0">
+            Arshad Aman.
+          </h1>
+          <h3 class="text-[#8892b0] font-bold md:text-6xl text-4xl intros opacity-0">
+            I build things for the web.
+          </h3>
+        </div>
+        <p class="text-lg text-[#8892b0] my-7 md:w-1/2 intros opacity-0">
+          Expertise in Python, JavaScript, React, and
+          Django.
+          <a class="underline text-[#53d5ba] cursor-pointer" href="https://gdg.community.dev/gdg-bhubaneswar/">Google
+            Developers Group Bhubaneswar</a>
+          Campus Representative Empowering and Inspiring the Next Generation
+          of Tech Leaders!
+        </p>
+        <a href="#contact" class="">
+          <button
+            class="bg-[#0a192f] hover:bg-[#133040] outline-[#64ffda] font-mono text-[#64ffda] py-4 md:px-5 px-16 rounded border-2 border-[#64ffda] intros opacity-0">
+            Contact Me!
+          </button></a>
+      </div>
+
+      <!-- About  -->
+      <div class="pt-60 pb-20 scroll-reveal" id="about">
+        <div class="heading md:text-3xl text-2xl flex space-x-5 items-center scroll-reveal">
+          <span class="text-[#64ffda] md:text-2xl text-xl">01.</span>
+          <h1 class="font-bold text-[#ccd6f6]">About Me</h1>
+          <div class="h-[1px] md:w-80 w-20 bg-[#233554]"></div>
+        </div>
+        <div class="container py-10 md:flex md:space-x-20">
+          <div class="left text-[#8892b0] md:w-1/2 space-y-5 text-lg scroll-reveal">
+            <p>
+              I am a skilled developer with expertise in Python, JavaScript,
+              React, and Django. I am passionate about technology and always
+              strive to stay up-to-date with the latest industry trends.
+            </p>
+
+            <p>
+              As the Campus Representative for GDG Bhubaneswar, I have
+              discovered a love for teaching and have found it to be
+              incredibly rewarding. I enjoy sharing my knowledge and
+              empowering the next generation of tech leaders.
+            </p>
+
+            <p>
+              In addition to teaching, my portfolio of projects showcases my
+              creativity and abilities in developing web applications and
+              creating dynamic interfaces. I thrive in collaborative
+              environments and am always seeking new opportunities to make a
+              positive impact on the tech community.
+            </p>
+
+            <!-- <p>I am excited to continue growing and learning in the tech industry, and I am confident that my passion for teaching and my dedication to making a positive impact will serve me well in whatever opportunities come my way.</p> -->
+            <p>Here are the technologies I work with:</p>
+            <ul class="list-disc grid grid-cols-2 list-inside">
+              <li>Javascript</li>
+              <li>React.js</li>
+              <li>Python</li>
+              <li>Django/Flask</li>
+              <li>Bootstrap</li>
+              <li>Tailwind CSS</li>
             </ul>
           </div>
-        </nav>
-      </div>
-
-      <div
-        class="left-icons fixed md:flex hidden flex-col px-14 items-center space-y-7 bottom-0"
-        id="leftline"
-      >
-        <ul class="flex flex-col text-[#8892b0] space-y-7">
-          <li class="hover:text-[#64ffda] icon-move">
-            <i class="fab fa-github text-xl hover:text-[#60f6d3]"></i>
-          </li>
-          <li class="hover:text-[#64ffda] icon-move">
-            <i class="fab fa-instagram text-xl"></i>
-          </li>
-          <li class="hover:text-[#64ffda] icon-move">
-            <i class="fab fa-twitter text-xl"></i>
-          </li>
-          <li class="hover:text-[#64ffda] icon-move">
-            <i class="fab fa-linkedin-in text-xl"></i>
-          </li>
-        </ul>
-        <div class="h-24 w-[2px] bg-[#ccd6f6]"></div>
-      </div>
-
-      <div
-        class="right-icons fixed md:flex hidden flex-col px-0 items-center space-y-28 bottom-0 right-0"
-        id="rightline"
-      >
-        <div class="mail flex flex-col rotate-90">
-          <a
-            href="mailto:arshadaman202@gmail.com"
-            class="text-[#8892b0] hover:text-[#64ffda] email-move text-sm font-mono"
-            >arshadaman202@gmail.com</a
-          >
-        </div>
-        <div class="h-24 w-[2px] bg-[#ccd6f6]"></div>
-      </div>
-
-      <!-- .................................Content Box............................  -->
-
-      <section class="content-box md:px-60 px-10 pt-20 pb-10" id="content">
-        <!-- Intro -->
-        <div class="intro">
-          <div class="mainhead space-y-3">
-            <p class="text-[#53d5ba] text-lg font-semibold intros opacity-0">
-              Hi, my name is
-            </p>
-            <h1
-              class="text-[#ccd6f6] font-black md:text-[80px] text-6xl font-mono intros opacity-0"
-            >
-              Arshad Aman.
-            </h1>
-            <h3
-              class="text-[#8892b0] font-bold md:text-6xl text-4xl intros opacity-0"
-            >
-              I build things for the web.
-            </h3>
-          </div>
-          <p class="text-lg text-[#8892b0] my-7 md:w-1/2 intros opacity-0">
-            5⭐ HackerRank with Expertise in Python, JavaScript, React, and
-            Django.
-            <a
-              class="underline text-[#53d5ba] cursor-pointer"
-              href="https://gdg.community.dev/gdg-bhubaneswar/"
-              >Google Developers Group Bhubaneswar</a
-            >
-            Campus Representative Empowering and Inspiring the Next Generation
-            of Tech Leaders!
-          </p>
-          <a href="#contact" class="">
-            <button
-              class="bg-[#0a192f] hover:bg-[#133040] outline-[#64ffda] font-mono text-[#64ffda] py-4 md:px-5 px-16 rounded border-2 border-[#64ffda] intros opacity-0"
-            >
-              Contact Me!
-            </button></a
-          >
-        </div>
-
-        <!-- About  -->
-        <div class="pt-60 pb-20 scroll-reveal" id="about">
-          <div
-            class="heading md:text-3xl text-2xl flex space-x-5 items-center scroll-reveal"
-          >
-            <span class="text-[#64ffda] md:text-2xl text-xl">01.</span>
-            <h1 class="font-bold text-[#ccd6f6]">About Me</h1>
-            <div class="h-[1px] md:w-80 w-20 bg-[#233554]"></div>
-          </div>
-          <div class="container py-10 md:flex md:space-x-20">
-            <div
-              class="left text-[#8892b0] md:w-1/2 space-y-5 text-lg scroll-reveal"
-            >
-              <p>
-                I am a skilled developer with expertise in Python, JavaScript,
-                React, and Django. I am passionate about technology and always
-                strive to stay up-to-date with the latest industry trends.
-              </p>
-
-              <p>
-                As the Campus Representative for GDG Bhubaneswar, I have
-                discovered a love for teaching and have found it to be
-                incredibly rewarding. I enjoy sharing my knowledge and
-                empowering the next generation of tech leaders.
-              </p>
-
-              <p>
-                In addition to teaching, my portfolio of projects showcases my
-                creativity and abilities in developing web applications and
-                creating dynamic interfaces. I thrive in collaborative
-                environments and am always seeking new opportunities to make a
-                positive impact on the tech community.
-              </p>
-
-              <!-- <p>I am excited to continue growing and learning in the tech industry, and I am confident that my passion for teaching and my dedication to making a positive impact will serve me well in whatever opportunities come my way.</p> -->
-              <p>Here are the technologies I work with:</p>
-              <ul class="list-disc grid grid-cols-2 list-inside">
-                <li>Javascript</li>
-                <li>React.js</li>
-                <li>Python</li>
-                <li>Django/Flask</li>
-                <li>Bootstrap</li>
-                <li>Tailwind CSS</li>
-              </ul>
-            </div>
-            <div class="right relative scroll-reveal my-16 md:my-0">
+          <div class="right relative scroll-reveal hidden md:flex my-16 md:my-0">
+            <div class="frame h-[300px] w-[300px] border-[#60f6d3] border-2 rounded relative">
+              <img src="/Images/arshad.png" alt="" class="absolute bottom-5 right-5 rounded w-[300px] h-[300px]" />
               <div
-                class="frame h-[300px] w-[300px] border-[#60f6d3] border-2 rounded relative"
-              >
-                <img
-                  src="/Images/mypic.jpg"
-                  alt=""
-                  class="absolute bottom-5 right-5 rounded w-[300px] h-[300px]"
-                />
-                <div
-                  class="absolute bottom-5 right-5 rounded bg-[rgba(92,255,214,0.46)] hover:hidden z-10 w-[298px] h-[300px]"
-                ></div>
+                class="absolute bottom-5 right-5 rounded bg-[rgba(92,255,214,0.46)] hover:hidden z-10 w-[298px] h-[300px]">
+              </div>
+            </div>
+          </div>
+          <div class="right relative md:hidden flex justify-center scroll-reveal my-16 md:my-0" id="parent-blue">
+            <div class="frame h-[300px] w-[300px] border-[#60f6d3] border-2 rounded relative">
+              <img src="/Images/arshad.png" alt="" class="absolute bottom-5 right-5 rounded w-[300px] h-[300px]" />
+              <div
+                class="absolute bottom-5 right-5 rounded bg-[rgba(92,255,214,0.46)] z-10 w-[298px] h-[300px]" id="hideBlue">
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="worked md:px-32 scroll-reveal" id="experience">
-          <div
-            class="heading md:text-3xl text-2xl flex space-x-5 items-center scroll-reveal"
-          >
-            <span class="text-[#64ffda] md:text-2xl text-xl">02.</span>
-            <h1 class="font-bold text-[#ccd6f6]">Where I’ve Worked</h1>
-            <div class="h-[1px] md:w-80 w-2 bg-[#233554]"></div>
-          </div>
-          <div class="container md:flex md:space-x-12 scroll-reveal">
-            <div class="left md:flex my-10 scroll-reveal">
-              <div class="h-72 w-[1px] md:block hidden bg-[#233554]"></div>
-              <div class="h-[1px] w-[100%] md:hidden bg-[#233554]"></div>
-              <div
-                class="org md:space-y-2 flex md:flex-col overflow-x-scroll w-[100%]"
-              >
-                <button
-                  class="text-[#8892b0] px-7 py-2 hover:bg-[#112240] hover:text-[#64ffda] focus:bg-[#112240] focus:text-[#64ffda] md:focus:border-l-[3px] focus:border-t-[3px] md:focus:border-t-[0px] focus:border-l-[#64ffda] outline-none"
-                  id="1st"
-                  onclick="showOrg('1')"
-                >
-                  GDG
-                </button>
-                <button
-                  class="text-[#8892b0] px-7 py-2 hover:bg-[#112240] hover:text-[#64ffda] focus:bg-[#112240] focus:text-[#64ffda] md:focus:border-l-[3px] focus:border-t-[3px] focus:border-l-[#64ffda] outline-none md:focus:border-t-[0px]"
-                  onclick="showOrg('2')"
-                >
-                  Freelancing
-                </button>
-                <!-- <button
+      <div class="worked md:px-32 scroll-reveal" id="experience">
+        <div class="heading md:text-3xl text-2xl flex space-x-5 items-center scroll-reveal">
+          <span class="text-[#64ffda] md:text-2xl text-xl">02.</span>
+          <h1 class="font-bold text-[#ccd6f6]">Where I’ve Worked</h1>
+          <div class="h-[1px] md:w-80 w-2 bg-[#233554]"></div>
+        </div>
+        <div class="container md:flex md:space-x-12 scroll-reveal">
+          <div class="left md:flex my-10 scroll-reveal">
+            <div class="h-72 w-[1px] md:block hidden bg-[#233554]"></div>
+            <div class="h-[1px] w-[100%] md:hidden bg-[#233554]"></div>
+            <div class="org md:space-y-2 flex md:flex-col overflow-x-scroll w-[100%]">
+              <button
+                class="text-[#8892b0] px-7 py-2 hover:bg-[#112240] hover:text-[#64ffda] focus:bg-[#112240] focus:text-[#64ffda] md:focus:border-l-[3px] focus:border-t-[3px] md:focus:border-t-[0px] focus:border-l-[#64ffda] outline-none"
+                id="1st" onclick="showOrg('1')">
+                GDG
+              </button>
+              <button
+                class="text-[#8892b0] px-7 py-2 hover:bg-[#112240] hover:text-[#64ffda] focus:bg-[#112240] focus:text-[#64ffda] md:focus:border-l-[3px] focus:border-t-[3px] focus:border-l-[#64ffda] outline-none md:focus:border-t-[0px]"
+                onclick="showOrg('2')">
+                Freelancing
+              </button>
+              <!-- <button
                   class="text-[#8892b0] px-7 py-2 hover:bg-[#112240] hover:text-[#64ffda] focus:bg-[#112240] focus:text-[#64ffda] focus:border-l-[#64ffda] md:focus:border-l-[3px] focus:border-t-[3px] md:focus:border-t-[0px]"
                   onclick="showOrganisation('3')"
                 >
@@ -309,81 +263,71 @@
                 >
                   Meta
                 </button> -->
-              </div>
             </div>
+          </div>
 
-            <div class="right my-10 job-desc scroll-reveal hidden" id="one">
-              <div class="heading">
-                <div class="title scroll-reveal">
-                  <h1 class="text-[#ccd6f6] text-2xl scroll-reveal">
-                    Campus Representative
-                    <span class="text-[#60f6d3]"
-                      >@
-                      <span class="hover:underline"
-                        >Google Developers Group Bhubaneswar</span
-                      ></span
-                    >
-                  </h1>
-                </div>
-                <p
-                  class="text-sm text-[#8892b0] my-2 font-medium scroll-reveal"
-                >
-                  Feb 2023 - Present
-                </p>
-                <ul
-                  class="list-inside list-disc text-[#8892b0] space-y-4 my-4 scroll-reveal"
-                >
-                  <li class="scroll-reveal">
-                    Representing Google Developer Group on campus, sharing
-                    latest technology news and information via a managed
-                    WhatsApp group to increase awareness among students.
-                  </li>
-                  <li class="scroll-reveal">
-                    Organizing webinars on web development, cloud computing,
-                    ethical hacking, and cybersecurity to educate students and
-                    provide a platform to learn from experienced industry
-                    professionals.
-                  </li>
-                  <li class="scroll-reveal">
-                    Planning to host a seminar on campus, where industry experts
-                    will guide and mentor students, offering an opportunity to
-                    learn from experienced professionals and gain insights into
-                    the latest trends and innovations in the tech industry.
-                  </li>
-                </ul>
+          <div class="right my-10 job-desc scroll-reveal hidden" id="one">
+            <div class="heading">
+              <div class="title scroll-reveal">
+                <h1 class="text-[#ccd6f6] text-2xl scroll-reveal">
+                  Campus Representative
+                  <span class="text-[#60f6d3]">@
+                    <span class="hover:underline">Google Developers Group Bhubaneswar</span></span>
+                </h1>
               </div>
+              <p class="text-sm text-[#8892b0] my-2 font-medium scroll-reveal">
+                Feb 2023 - Present
+              </p>
+              <ul class="list-inside list-disc text-[#8892b0] space-y-4 my-4 scroll-reveal">
+                <li class="scroll-reveal">
+                  Representing Google Developer Group on campus, sharing
+                  latest technology news and information via a managed
+                  WhatsApp group to increase awareness among students.
+                </li>
+                <li class="scroll-reveal">
+                  Organizing webinars on web development, cloud computing,
+                  ethical hacking, and cybersecurity to educate students and
+                  provide a platform to learn from experienced industry
+                  professionals.
+                </li>
+                <li class="scroll-reveal">
+                  Planning to host a seminar on campus, where industry experts
+                  will guide and mentor students, offering an opportunity to
+                  learn from experienced professionals and gain insights into
+                  the latest trends and innovations in the tech industry.
+                </li>
+              </ul>
             </div>
-            <div class="right my-10 hidden job-desc" id="two">
-              <div class="heading">
-                <div class="title scroll-reveal">
-                  <h1 class="text-[#ccd6f6] text-2xl scroll-reveal">
-                    Freelancer
-                    <!-- <span class="text-[#60f6d3]"
+          </div>
+          <div class="right my-10 hidden job-desc" id="two">
+            <div class="heading">
+              <div class="title scroll-reveal">
+                <h1 class="text-[#ccd6f6] text-2xl scroll-reveal">
+                  Freelancer
+                  <!-- <span class="text-[#60f6d3]"
                       >@ <span class="hover:underline">Amazon</span></span
                     > -->
-                  </h1>
-                </div>
-                <p
-                  class="text-sm text-[#8892b0] my-2 font-medium scroll-reveal"
-                >
-                  October 2021 - Present
-                </p>
-                <ul
-                  class="list-inside list-disc text-[#8892b0] space-y-4 my-4 scroll-reveal"
-                >
-                  <li>
-                    Experienced freelance web developer with a passion for helping individuals solve their web development tasks and providing long-term support to clients.
-                  </li>
-                  <li>
-                    Highly rated ⭐⭐⭐⭐⭐ for delivering quality work and exceeding expectations.
-                  </li>
-                  <li>
-                    Passionate about teaching coding-related topics to friends and network, dedicated to sharing knowledge and helping others grow.
-                  </li>
-                </ul>
+                </h1>
               </div>
+              <p class="text-sm text-[#8892b0] my-2 font-medium scroll-reveal">
+                October 2021 - Present
+              </p>
+              <ul class="list-inside list-disc text-[#8892b0] space-y-4 my-4 scroll-reveal">
+                <li>
+                  Experienced freelance web developer with a passion for helping individuals solve their web development
+                  tasks and providing long-term support to clients.
+                </li>
+                <li>
+                  Highly rated ⭐⭐⭐⭐⭐ for delivering quality work and exceeding expectations.
+                </li>
+                <li>
+                  Passionate about teaching coding-related topics to friends and network, dedicated to sharing knowledge
+                  and helping others grow.
+                </li>
+              </ul>
             </div>
-            <!-- <div class="right my-10 hidden job-desc" id="3">
+          </div>
+          <!-- <div class="right my-10 hidden job-desc" id="3">
               <div class="heading">
                 <div class="title scroll-reveal">
                   <h1 class="text-[#ccd6f6] text-2xl scroll-reveal">
@@ -523,623 +467,459 @@
                 </ul>
               </div>
             </div> -->
-          </div>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="projects py-40 scroll-reveal">
+        <div class="heading md:text-3xl text-[20px] flex space-x-5 items-center scroll-reveal">
+          <span class="text-[#64ffda] md:text-2xl text-lg scroll-reveal">03.</span>
+          <h1 class="font-bold text-[#ccd6f6] scroll-reveal">
+            Some Things I’ve Built
+          </h1>
+          <div class="h-[1px] md:w-80 w-3 bg-[#233554] scroll-reveal"></div>
         </div>
 
-        <!-- Projects -->
-        <div class="projects py-40 scroll-reveal">
-          <div
-            class="heading md:text-3xl text-[20px] flex space-x-5 items-center scroll-reveal"
-          >
-            <span class="text-[#64ffda] md:text-2xl text-lg scroll-reveal"
-              >03.</span
-            >
-            <h1 class="font-bold text-[#ccd6f6] scroll-reveal">
-              Some Things I’ve Built
-            </h1>
-            <div class="h-[1px] md:w-80 w-3 bg-[#233554] scroll-reveal"></div>
+        <!-- Projects boxes -->
+
+        <div class="projects md:space-y-32 scroll-reveal flex flex-col items-center" id="work">
+          <div class="container-large my-10 md:flex hidden justify-between scroll-reveal">
+            <div class="left relative scroll-reveal">
+              <img src="/Images/recordbump.jpg" alt="project1" class="w-[600px] h-[350px]" />
+              <div class="absolute bottom-0 right-0 bg-[rgb(30,69,82,0.9)] hover:hidden z-10 w-[570px] h-[350px]"></div>
+            </div>
+            <div class="right flex flex-col items-end justify-between relative z-50 right-12 scroll-reveal">
+              <div class="heading block text-right">
+                <p class="text-[#64ffda]">Featured Project</p>
+                <h1 class="text-[#ccd6f6] text-3xl font-medium">
+                  Record Bump
+                </h1>
+              </div>
+              <div class="about bg-[#112240] text-[#8892b0] w-[480px] p-6 rounded mt-3 top-16 shadow-lg z-20">
+                RecordBump is a <span class="text-[#64ffda]">Social Media Agency</span> delivering results to emerging
+                creators, athletes, musicians,
+                Fortune 500 companies and everything in-between. We offer a variety of services such as Press Release,
+                Product Exposure, Marketing, and Product Endorsement Campaigns With Your Favorite Celebrities.
+              </div>
+              <ul class="space-x-3 text-[#8892b0] flex">
+                <li>HTMl</li>
+                <li>Tailwind CSS</li>
+                <li>JavaScript</li>
+                <li>Calendly</li>
+              </ul>
+              <ul class="space-x-3 text-[#8892b0] flex">
+                <li>
+                  <a href="">
+                    <i class="fab fa-github text-xl hover:text-[#60f6d3]"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.recordbump.co/"> <i
+                      class="fas fa-external-link-alt hover:text-[#60f6d3]"></i></a>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <!-- Projects boxes -->
-
-          <div
-            class="projects md:space-y-32 scroll-reveal flex flex-col items-center"
-            id="work"
-          >
+          <div class="container-mobile md:hidden my-10 justify-between relative">
+            <div class="left relative scroll-reveal opacity-100 w-[310px]">
+              <img src="/Images/recordbump.jpg" alt="project1" class="w-[310px] h-[430px]" />
+              <div class="absolute bottom-0 right-0 bg-[rgb(30,69,82,0.9)] hover:hidden z-10 w-[310px] h-[430px]"></div>
+            </div>
             <div
-              class="container-large my-10 md:flex hidden justify-between scroll-reveal"
-            >
-              <div class="left relative scroll-reveal">
-                <img
-                  src="/Images/demopro.jpg"
-                  alt="project1"
-                  class="w-[600px] h-[350px]"
-                />
-                <div
-                  class="absolute bottom-0 right-0 bg-[rgb(30,69,82,0.9)] hover:hidden z-10 w-[570px] h-[350px]"
-                ></div>
-              </div>
+              class="right flex-col items-end justify-between absolute z-50 bottom-3 scroll-reveal w-[310px] h-[430px]">
               <div
-                class="right flex flex-col items-end justify-between relative z-50 right-12 scroll-reveal"
-              >
-                <div class="heading block text-right">
+                class="about bg-[#112240] text-[#8892b0] w-[310px] h-[430px] p-6 rounded mt-3 shadow-lg z-20 opacity-60 space-y-4">
+                <div class="heading block">
                   <p class="text-[#64ffda]">Featured Project</p>
                   <h1 class="text-[#ccd6f6] text-3xl font-medium">
                     Record Bump
                   </h1>
                 </div>
-                <div
-                  class="about bg-[#112240] text-[#8892b0] w-[480px] h-[130px] p-6 rounded mt-3 top-16 shadow-lg z-20"
-                >
-                  A minimal, dark blue theme for VS Code, Sublime Text, Atom,
-                  iTerm, and more. Available on
-                  <span class="text-[#64ffda]">Visual Studio Marketplace</span>,
-                  <span class="text-[#64ffda]">Package Control</span>,
-                  <span class="text-[#64ffda]">Atom Package Manager</span>, and
-                  <span class="text-[#64ffda]">npm</span>.
-                </div>
-                <ul class="space-x-3 text-[#8892b0] flex">
-                  <li>Vs code</li>
-                  <li>iTerm</li>
-                  <li>Sublime Text</li>
-                  <li>Hyper</li>
-                  <li>Atom</li>
-                </ul>
-                <ul class="space-x-3 text-[#8892b0] flex">
-                  <li>
-                    <i class="fab fa-github text-xl hover:text-[#60f6d3]"></i>
-                  </li>
-                  <li>
-                    <i
-                      class="fas fa-external-link-alt hover:text-[#60f6d3]"
-                    ></i>
-                  </li>
-                </ul>
-              </div>
-            </div>
 
-            <div
-              class="container-mobile md:hidden my-10 justify-between relative"
-            >
-              <div
-                class="left relative scroll-reveal opacity-100 w-[310px] h-[405px]"
-              >
-                <img
-                  src="/Images/demopro.jpg"
-                  alt="project1"
-                  class="w-[310px] h-[405px]"
-                />
-                <div
-                  class="absolute bottom-0 right-0 bg-[rgb(30,69,82,0.9)] hover:hidden z-10 w-[310px] h-[405px]"
-                ></div>
+                <div>
+                  RecordBump is a <span class="text-[#64ffda]">Social Media Agency</span> delivering results to emerging
+                  creators, athletes, musicians,
+                  Fortune 500 companies and everything in-between. We offer a variety of services such as Press Release,
+                  Product Exposure, Marketing, and Product Endorsement Campaigns With Your Favorite Celebrities.
+                </div>
               </div>
-              <div class="heading hidden text-right">
+              <ul class="space-x-2 kw-[5px] text-[#8892b0] flex relative bottom-32 p-5 mt-8 text-xs">
+                <li>HTMl</li>
+                <li>Tailwind CSS</li>
+                <li>JavaScript</li>
+                <li>Calendly</li>
+              </ul>
+              <ul class="space-x-3 text-[#8892b0] flex relative bottom-40 p-5 text-sm">
+                <li>
+                  <a href=""><i class="fab fa-github hover:text-[#60f6d3]"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.recordbump.co/" target="_blank"><i
+                      class="fas fa-external-link-alt hover:text-[#60f6d3]"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="container-large my-10 md:flex hidden justify-between scroll-reveal">
+            <div class="right flex flex-col items-start justify-between relative z-50 left-12 scroll-reveal">
+              <div class="heading block text-left">
                 <p class="text-[#64ffda]">Featured Project</p>
-                <h1 class="text-[#ccd6f6] text-3xl font-medium">Record Bump</h1>
+                <h1 class="text-[#ccd6f6] text-3xl font-medium">
+                  Youtube Clone
+                </h1>
               </div>
-              <div
-                class="right flex-col items-end justify-between absolute z-50 bottom-3 scroll-reveal w-[310px] h-[405px]"
-              >
-                <div
-                  class="about bg-[#112240] text-[#8892b0] w-[310px] h-[405px] p-6 rounded mt-3 shadow-lg z-20 opacity-60 space-y-4"
-                >
-                  <div class="heading block">
-                    <p class="text-[#64ffda]">Featured Project</p>
-                    <h1 class="text-[#ccd6f6] text-3xl font-medium">
-                      Record Bump
-                    </h1>
-                  </div>
-
-                  <div>
-                    A minimal, dark blue theme for VS Code, Sublime Text, Atom,
-                    iTerm, and more. Available on
-                    <span class="text-[#64ffda]">Visual Studio Marketplace</span
-                    >, <span class="text-[#64ffda]">Package Control</span>,
-                    <span class="text-[#64ffda]">Atom Package Manager</span>,
-                    and <span class="text-[#64ffda]">npm</span>.
-                  </div>
-                </div>
-                <ul
-                  class="space-x-3 w-[5px] text-[#8892b0] flex relative bottom-32 p-5"
-                >
-                  <li>Vs code</li>
-                  <li>iTerm</li>
-                  <li>Sublime Text</li>
-                  <li>Hyper</li>
-                  <li>Atom</li>
-                </ul>
-                <ul
-                  class="space-x-3 text-[#8892b0] flex relative bottom-36 p-5"
-                >
-                  <li>
+              <div class="about bg-[#112240] text-[#8892b0] w-[480px] p-6 rounded mt-3 top-16 shadow-lg z-20">
+                Youtube clone made using <span class="text-[#64ffda]">React.js and</span><span class="text-[#64ffda]">
+                  youtube-v3-alternative from RapidApi</span>. In this
+                Youtube clone one can see the videos in the home feed, search the video and also can watch the videos
+                that they want.
+              </div>
+              <ul class="space-x-3 text-[#8892b0] flex">
+                <li>React.js</li>
+                <li>Tailwind CSS</li>
+                <li>JavaScript</li>
+                <li>Rapid API</li>
+              </ul>
+              <ul class="space-x-3 text-[#8892b0] flex">
+                <li>
+                  <a href="https://github.com/ArshadAman/YoutubeClone">
                     <i class="fab fa-github text-xl hover:text-[#60f6d3]"></i>
-                  </li>
-                  <li>
-                    <i
-                      class="fas fa-external-link-alt hover:text-[#60f6d3]"
-                    ></i>
-                  </li>
-                </ul>
-              </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://arshad-youtube.netlify.app/">
+                    <i class="fas fa-external-link-alt hover:text-[#60f6d3]"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
+            <div class="left relative scroll-reveal">
+              <img src="/Images/youtube.png" alt="project1" class="w-[600px] h-[350px]" />
+              <div class="absolute bottom-0 right-0 bg-[rgb(30,69,82,0.9)] hover:hidden z-10 w-[570px] h-[350px]"></div>
+            </div>
+          </div>
 
+          <div class="container-mobile md:hidden my-10 justify-between relative">
+            <div class="left relative scroll-reveal opacity-100 w-[310px]">
+              <img src="/Images/youtube.png" alt="project1" class="w-[310px] h-[430px]" />
+              <div class="absolute bottom-0 right-0 bg-[rgb(30,69,82,0.9)] hover:hidden z-10 w-[310px] h-[430px]"></div>
+            </div>
             <div
-              class="container-large my-10 md:flex hidden justify-between scroll-reveal"
-            >
+              class="right flex-col items-end justify-between absolute z-50 bottom-3 scroll-reveal w-[310px] h-[430px]">
               <div
-                class="right flex flex-col items-start justify-between relative z-50 left-12 scroll-reveal"
-              >
-                <div class="heading block text-left">
+                class="about bg-[#112240] text-[#8892b0] w-[310px] h-[430px] p-6 rounded mt-3 shadow-lg z-20 opacity-60 space-y-4">
+                <div class="heading block">
                   <p class="text-[#64ffda]">Featured Project</p>
                   <h1 class="text-[#ccd6f6] text-3xl font-medium">
-                    Record Bump
+                    Youtube Clone
                   </h1>
                 </div>
-                <div
-                  class="about bg-[#112240] text-[#8892b0] w-[480px] h-[130px] p-6 rounded mt-3 top-16 shadow-lg z-20"
-                >
-                  A minimal, dark blue theme for VS Code, Sublime Text, Atom,
-                  iTerm, and more. Available on
-                  <span class="text-[#64ffda]">Visual Studio Marketplace</span>,
-                  <span class="text-[#64ffda]">Package Control</span>,
-                  <span class="text-[#64ffda]">Atom Package Manager</span>, and
-                  <span class="text-[#64ffda]">npm</span>.
+                <div>
+                  Youtube clone made using <span class="text-[#64ffda]">React.js and</span><span class="text-[#64ffda]">
+                    youtube-v3-alternative from RapidApi</span>. In this
+                  Youtube clone one can see the videos in the home feed, search the video and also can watch the videos
+                  that they want.
                 </div>
-                <ul class="space-x-3 text-[#8892b0] flex">
-                  <li>Vs code</li>
-                  <li>iTerm</li>
-                  <li>Sublime Text</li>
-                  <li>Hyper</li>
-                  <li>Atom</li>
-                </ul>
-                <ul class="space-x-3 text-[#8892b0] flex">
-                  <li>
-                    <i class="fab fa-github text-xl hover:text-[#60f6d3]"></i>
-                  </li>
-                  <li>
-                    <i
-                      class="fas fa-external-link-alt hover:text-[#60f6d3]"
-                    ></i>
-                  </li>
-                </ul>
               </div>
-              <div class="left relative scroll-reveal">
-                <img
-                  src="/Images/demopro.jpg"
-                  alt="project1"
-                  class="w-[600px] h-[350px]"
-                />
-                <div
-                  class="absolute bottom-0 right-0 bg-[rgb(30,69,82,0.9)] hover:hidden z-10 w-[570px] h-[350px]"
-                ></div>
-              </div>
+              <ul class="space-x-2 kw-[5px] text-[#8892b0] flex relative bottom-32 p-5 mt-8 text-xs">
+                <li>React.js</li>
+                <li>Tailwind CSS</li>
+                <li>JavaScript</li>
+                <li>Rapid API</li>
+              </ul>
+              <ul class="space-x-3 text-[#8892b0] flex relative bottom-40 p-5 text-sm">
+                <li>
+                  <a href="https://github.com/ArshadAman/YoutubeClone"><i class="fab fa-github hover:text-[#60f6d3]"></i></a>
+                </li>
+                <li>
+                  <a href="https://arshad-youtube.netlify.app/" target="_blank"><i
+                      class="fas fa-external-link-alt hover:text-[#60f6d3]"></i></a>
+                </li>
+              </ul>
             </div>
+          </div>
 
-            <div
-              class="container-mobile md:hidden my-10 justify-between relative"
-            >
-              <div
-                class="left relative scroll-reveal opacity-100 w-[310px] h-[405px]"
-              >
-                <img
-                  src="/Images/demopro.jpg"
-                  alt="project1"
-                  class="w-[310px] h-[405px]"
-                />
-                <div
-                  class="absolute bottom-0 right-0 bg-[rgb(30,69,82,0.9)] hover:hidden z-10 w-[310px] h-[405px]"
-                ></div>
-              </div>
-              <div class="heading hidden text-right">
+          <div class="container-large my-10 md:flex hidden justify-between scroll-reveal">
+            <div class="left relative scroll-reveal">
+              <img src="/Images/devplore.png" alt="project2" class="w-[600px] h-[350px]" />
+              <div class="absolute bottom-0 right-0 bg-[rgb(30,69,82,0.9)] hover:hidden z-10 w-[570px] h-[350px]"></div>
+            </div>
+            <div class="right flex flex-col items-end justify-between relative z-50 right-12 scroll-reveal">
+              <div class="heading block text-right">
                 <p class="text-[#64ffda]">Featured Project</p>
-                <h1 class="text-[#ccd6f6] text-3xl font-medium">Record Bump</h1>
+                <h1 class="text-[#ccd6f6] text-3xl font-medium">
+                  DevXplore
+                </h1>
               </div>
-              <div
-                class="right flex-col items-end justify-between absolute z-50 bottom-3 scroll-reveal w-[310px] h-[405px]"
-              >
-                <div
-                  class="about bg-[#112240] text-[#8892b0] w-[310px] h-[405px] p-6 rounded mt-3 shadow-lg z-20 opacity-60 space-y-4"
-                >
-                  <div class="heading block">
-                    <p class="text-[#64ffda]">Featured Project</p>
-                    <h1 class="text-[#ccd6f6] text-3xl font-medium">
-                      Record Bump
-                    </h1>
-                  </div>
-
-                  <div>
-                    A minimal, dark blue theme for VS Code, Sublime Text, Atom,
-                    iTerm, and more. Available on
-                    <span class="text-[#64ffda]">Visual Studio Marketplace</span
-                    >, <span class="text-[#64ffda]">Package Control</span>,
-                    <span class="text-[#64ffda]">Atom Package Manager</span>,
-                    and <span class="text-[#64ffda]">npm</span>.
-                  </div>
-                </div>
-                <ul
-                  class="space-x-3 w-[5px] text-[#8892b0] flex relative bottom-32 p-5"
-                >
-                  <li>Vs code</li>
-                  <li>iTerm</li>
-                  <li>Sublime Text</li>
-                  <li>Hyper</li>
-                  <li>Atom</li>
-                </ul>
-                <ul
-                  class="space-x-3 text-[#8892b0] flex relative bottom-36 p-5"
-                >
-                  <li>
-                    <i class="fab fa-github text-xl hover:text-[#60f6d3]"></i>
-                  </li>
-                  <li>
-                    <i
-                      class="fas fa-external-link-alt hover:text-[#60f6d3]"
-                    ></i>
-                  </li>
-                </ul>
+              <div class="about bg-[#112240] text-[#8892b0] w-[480px] p-6 rounded mt-3 top-16 shadow-lg z-20">
+                DevXplore is a <span class="text-[#64ffda]">Django </span><span class="text-[#64ffda]">and
+                  React.js</span> Based Web App where developers can make their profiles and
+                showcase their projects and skills. They can message each other, like and comment on other developers'
+                projects. <span class="text-[#64ffda]">PROJECT IS ONGOING </span><span class="text-[#64ffda]"></span>
               </div>
+              <ul class="space-x-3 text-[#8892b0] flex">
+                <li>Django</li>
+                <li>React.js</li>
+                <li>Django Rest Framework</li>
+                <li>Tailwind CSS</li>
+              </ul>
+              <ul class="space-x-3 text-[#8892b0] flex">
+                <li>
+                  <i class="fab fa-github text-xl hover:text-[#60f6d3]"></i>
+                </li>
+                <li>
+                  <i class="fas fa-external-link-alt hover:text-[#60f6d3]"></i>
+                </li>
+              </ul>
             </div>
+          </div>
 
+          <div class="container-mobile md:hidden my-10 justify-between relative">
+            <div class="left relative scroll-reveal opacity-100 w-[310px]">
+              <img src="/Images/devplore.png" alt="project1" class="w-[310px] h-[430px]" />
+              <div class="absolute bottom-0 right-0 bg-[rgb(30,69,82,0.9)] hover:hidden z-10 w-[310px] h-[430px]"></div>
+            </div>
             <div
-              class="container-large my-10 md:flex hidden justify-between scroll-reveal"
-            >
-              <div class="left relative scroll-reveal">
-                <img
-                  src="/Images/demopro.jpg"
-                  alt="project1"
-                  class="w-[600px] h-[350px]"
-                />
-                <div
-                  class="absolute bottom-0 right-0 bg-[rgb(30,69,82,0.9)] hover:hidden z-10 w-[570px] h-[350px]"
-                ></div>
-              </div>
+              class="right flex-col items-end justify-between absolute z-50 bottom-3 scroll-reveal w-[310px] h-[430px]">
               <div
-                class="right flex flex-col items-end justify-between relative z-50 right-12 scroll-reveal"
-              >
-                <div class="heading block text-right">
+                class="about bg-[#112240] text-[#8892b0] w-[310px] h-[430px] p-6 rounded mt-3 shadow-lg z-20 opacity-60 space-y-4">
+                <div class="heading block">
                   <p class="text-[#64ffda]">Featured Project</p>
                   <h1 class="text-[#ccd6f6] text-3xl font-medium">
-                    Record Bump
+                    DevXplore
                   </h1>
                 </div>
-                <div
-                  class="about bg-[#112240] text-[#8892b0] w-[480px] h-[130px] p-6 rounded mt-3 top-16 shadow-lg z-20"
-                >
-                  A minimal, dark blue theme for VS Code, Sublime Text, Atom,
-                  iTerm, and more. Available on
-                  <span class="text-[#64ffda]">Visual Studio Marketplace</span>,
-                  <span class="text-[#64ffda]">Package Control</span>,
-                  <span class="text-[#64ffda]">Atom Package Manager</span>, and
-                  <span class="text-[#64ffda]">npm</span>.
+
+                <div>
+                  DevXplore is a <span class="text-[#64ffda]">Django </span><span class="text-[#64ffda]">and
+                    React.js</span> Based Web App where developers can make their profiles and
+                  showcase their projects and skills. They can message each other, like and comment on other developers'
+                  projects. <span class="text-[#64ffda]">PROJECT IS ONGOING </span><span class="text-[#64ffda]"></span>
                 </div>
-                <ul class="space-x-3 text-[#8892b0] flex">
-                  <li>Vs code</li>
-                  <li>iTerm</li>
-                  <li>Sublime Text</li>
-                  <li>Hyper</li>
-                  <li>Atom</li>
+              </div>
+              <ul class="space-x-2 kw-[5px] text-[#8892b0] flex relative bottom-32 p-5 mt-8 text-xs">
+                <li>Django</li>
+                <li>React.js</li>
+                <li>Django RF</li>
+                <li>Tailwind CSS</li>
+              </ul>
+              <ul class="space-x-3 text-[#8892b0] flex relative bottom-40 p-5 text-sm">
+                <li>
+                  <a href=""><i class="fab fa-github hover:text-[#60f6d3]"></i></a>
+                </li>
+                <li>
+                  <a href="" target="_blank"><i
+                      class="fas fa-external-link-alt hover:text-[#60f6d3]"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other Projects  -->
+      <div class="other-projects py-10 md:py-40 scroll-reveal">
+        <div class="heading flex justify-center scroll-reveal">
+          <h1 class="text-[#ccd6f6] text-3xl font-medium scroll-reveal text-center md:text-left">
+            Other Noteworthy Projects
+          </h1>
+        </div>
+        <div class="cards my-16">
+          <div class="grid md:grid-cols-3 md:gap-10 gap-5 justify-center">
+            <div class="card h-80 w-80 bg-[#112240] shadow-2xl text-[#ccd6f6] hover:text-[#60f6d3] scroll-reveal">
+              <div class="icons p-7 flex justify-between">
+                <h1 class="text-[#60f6d3]"><i class="fas fa-folder fa-lg"></i></h1>
+                <div class="links flex space-x-2 text-[#8892b0]">
+                  <div class="github">
+                    <a href="https://github.com/ArshadAman/Netflix-Clone"><i class="fab fa-github text-xl hover:text-[#60f6d3]"></i></a>
+                  </div>
+                  <div class="link">
+                    <a href="https://netflix-clone2422.web.app/"><i class="fas fa-external-link-alt hover:text-[#60f6d3]"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="content p-7 flex flex-col space-y-5 font-medium">
+                <h1 class="text-2xl">Netflix Clone</h1>
+                <p class="text-sm text-[#8892b0]">
+                  Building Netflix Clone with With React.js and Pure CSS with Firebase Integration
+                </p>
+                <ul class="text-sm text-[#8892b0] flex self-start space-x-3 font-mono font-lighter">
+                  <li>React.js</li>
+                  <li>CSS</li>
+                  <li>Firebase</li>
                 </ul>
-                <ul class="space-x-3 text-[#8892b0] flex">
-                  <li>
+              </div>
+            </div>
+            <div class="card h-80 w-80 bg-[#112240] shadow-lg text-[#ccd6f6] hover:text-[#60f6d3] scroll-reveal">
+              <div class="icons p-7 flex justify-between">
+                <h1 class="text-[#60f6d3]"><i class="fas fa-folder fa-lg"></i></h1>
+                <div class="links flex space-x-2 text-[#8892b0]">
+                  <div class="github">
+                    <a href="https://github.com/ArshadAman/AmazonFull-Stack"><i class="fab fa-github text-xl hover:text-[#60f6d3]"></i></a>
+                  </div>
+                  <div class="link">
+                    <a href="">
+                      <i class="fas fa-external-link-alt hover:text-[#60f6d3]"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="content p-7 flex flex-col space-y-5 font-medium">
+                <h1 class="text-2xl">Amazon Clone</h1>
+                <p class="text-sm text-[#8892b0]">
+                  Building Amazon Clone with React.js, Django and Django Rest Framework
+                </p>
+                <ul class="text-sm text-[#8892b0] flex self-start space-x-3 font-mono font-lighter">
+                  <li>React.js</li>
+                  <li>Django</li>
+                  <li>Django RF</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card h-80 w-80 bg-[#112240] shadow-lg text-[#ccd6f6] hover:text-[#60f6d3] scroll-reveal">
+              <div class="icons p-7 flex justify-between">
+                <h1 class="text-[#60f6d3]"><i class="fas fa-folder fa-lg"></i></h1>
+                <div class="links flex space-x-2 text-[#8892b0]">
+                  <div class="github">
+                    <a href="https://github.com/ArshadAman/news-app">
+
+                      <i class="fab fa-github text-xl hover:text-[#60f6d3]"></i>
+                    </a>
+                  </div>
+                  <div class="link">
+                    <a href="">
+
+                      <i class="fas fa-external-link-alt hover:text-[#60f6d3]"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="content p-7 flex flex-col space-y-5 font-medium">
+                <h1 class="text-2xl">News App</h1>
+                <p class="text-sm text-[#8892b0]">
+                  This is a news single-page web application built with React.js that will fetch the API of NewsApi and will give the heading with some description.
+                </p>
+                <ul class="text-sm text-[#8892b0] flex self-start space-x-3 font-mono font-lighter">
+                  <li>React.js</li>
+                  <li>React Router</li>
+                  <li>News Api</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card h-80 w-80 bg-[#112240] shadow-lg text-[#ccd6f6] hover:text-[#60f6d3] scroll-reveal">
+              <div class="icons p-7 flex justify-between">
+                <h1 class="text-[#60f6d3]"><i class="fas fa-folder fa-lg"></i></h1>
+                <div class="links flex space-x-2 text-[#8892b0]">
+                  <div class="github">
+                    <a href="https://github.com/ArshadAman/dynamic_portfolio">
+                      <i class="fab fa-github text-xl hover:text-[#60f6d3]"></i>
+                    </a>
+                  </div>
+                  <div class="link">
+                    <a href="">
+
+                      <i class="fas fa-external-link-alt hover:text-[#60f6d3]"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="content p-7 flex flex-col space-y-5 font-medium">
+                <h1 class="text-2xl">Dynamic Portfolio</h1>
+                <p class="text-sm text-[#8892b0]">
+                  This is a backend of a portfolio website where the user can login and update their projects on the fly without any need to update html again and again.
+                </p>
+                <ul class="text-sm text-[#8892b0] flex self-start space-x-3 font-mono font-lighter">
+                  <li>Flask</li>
+                  <li>SQLAlchemy</li>
+                  <li>Flask-Login</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card h-80 w-80 bg-[#112240] shadow-lg text-[#ccd6f6] hover:text-[#60f6d3] scroll-reveal">
+              <div class="icons p-7 flex justify-between">
+                <h1 class="text-[#60f6d3]"><i class="fas fa-folder fa-lg"></i></h1>
+                <div class="links flex space-x-2 text-[#8892b0]">
+                  <div class="github">
                     <i class="fab fa-github text-xl hover:text-[#60f6d3]"></i>
-                  </li>
-                  <li>
-                    <i
-                      class="fas fa-external-link-alt hover:text-[#60f6d3]"
-                    ></i>
-                  </li>
+                  </div>
+                  <div class="link">
+                    <i class="fas fa-external-link-alt hover:text-[#60f6d3]"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="content p-7 flex flex-col space-y-5 font-medium">
+                <h1 class="text-2xl">Blog Application</h1>
+                <p class="text-sm text-[#8892b0]">
+                  A full fledged dog application with all the necessary features of a blog with some more additional features.
+                </p>
+                <ul class="text-sm text-[#8892b0] flex self-start space-x-3 font-mono font-lighter">
+                  <li>Django</li>
+                  <li>Bootstrap</li>
+                  <li>django-ckeditor</li>
                 </ul>
               </div>
             </div>
+            <div class="card h-80 w-80 bg-[#112240] shadow-lg text-[#ccd6f6] hover:text-[#60f6d3] scroll-reveal">
+              <div class="icons p-7 flex justify-between">
+                <h1 class="text-[#60f6d3]"><i class="fas fa-folder fa-lg"></i></h1>
+                <div class="links flex space-x-2 text-[#8892b0]">
+                  <div class="github">
+                    <a href="https://github.com/ArshadAman/djangoblog">
 
-            <div
-              class="container-mobile md:hidden my-10 justify-between relative"
-            >
-              <div
-                class="left relative scroll-reveal opacity-100 w-[310px] h-[405px]"
-              >
-                <img
-                  src="/Images/demopro.jpg"
-                  alt="project1"
-                  class="w-[310px] h-[405px]"
-                />
-                <div
-                  class="absolute bottom-0 right-0 bg-[rgb(30,69,82,0.9)] hover:hidden z-10 w-[310px] h-[405px]"
-                ></div>
-              </div>
-              <div class="heading hidden text-right">
-                <p class="text-[#64ffda]">Featured Project</p>
-                <h1 class="text-[#ccd6f6] text-3xl font-medium">Record Bump</h1>
-              </div>
-              <div
-                class="right flex-col items-end justify-between absolute z-50 bottom-3 scroll-reveal w-[310px] h-[405px]"
-              >
-                <div
-                  class="about bg-[#112240] text-[#8892b0] w-[310px] h-[405px] p-6 rounded mt-3 shadow-lg z-20 opacity-60 space-y-4"
-                >
-                  <div class="heading block">
-                    <p class="text-[#64ffda]">Featured Project</p>
-                    <h1 class="text-[#ccd6f6] text-3xl font-medium">
-                      Record Bump
-                    </h1>
+                      <i class="fab fa-github text-xl hover:text-[#60f6d3]"></i>
+                    </a>
                   </div>
+                  <div class="link">
+                    <a href="">
 
-                  <div>
-                    A minimal, dark blue theme for VS Code, Sublime Text, Atom,
-                    iTerm, and more. Available on
-                    <span class="text-[#64ffda]">Visual Studio Marketplace</span
-                    >, <span class="text-[#64ffda]">Package Control</span>,
-                    <span class="text-[#64ffda]">Atom Package Manager</span>,
-                    and <span class="text-[#64ffda]">npm</span>.
+                      <i class="fas fa-external-link-alt hover:text-[#60f6d3]"></i>
+                    </a>
                   </div>
                 </div>
-                <ul
-                  class="space-x-3 w-[5px] text-[#8892b0] flex relative bottom-32 p-5"
-                >
-                  <li>Vs code</li>
-                  <li>iTerm</li>
-                  <li>Sublime Text</li>
-                  <li>Hyper</li>
-                  <li>Atom</li>
-                </ul>
-                <ul
-                  class="space-x-3 text-[#8892b0] flex relative bottom-36 p-5"
-                >
-                  <li>
-                    <i class="fab fa-github text-xl hover:text-[#60f6d3]"></i>
-                  </li>
-                  <li>
-                    <i
-                      class="fas fa-external-link-alt hover:text-[#60f6d3]"
-                    ></i>
-                  </li>
+              </div>
+              <div class="content p-7 flex flex-col space-y-5 font-medium">
+                <h1 class="text-2xl">Password Generator</h1>
+                <p class="text-sm text-[#8892b0]">
+                  This is my first Python project and I built it using my mummy's smartphone❤️.
+                </p>
+                <ul class="text-sm text-[#8892b0] flex self-start space-x-3 font-mono font-lighter">
+                  <li>Python</li>
+                  <li>Love❤️</li>
+                  <li>Emotion🥺</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Other Projects  -->
-        <div class="other-projects py-10 md:py-40 scroll-reveal">
-          <div class="heading flex justify-center scroll-reveal">
-            <h1
-              class="text-[#ccd6f6] text-3xl font-medium scroll-reveal text-center md:text-left"
-            >
-              Other Noteworthy Projects
-            </h1>
-          </div>
-          <div class="cards my-16">
-            <div class="grid md:grid-cols-3 md:gap-10 gap-5 justify-center">
-              <div
-                class="card h-80 w-80 bg-[#112240] shadow-2xl text-[#ccd6f6] hover:text-[#60f6d3] scroll-reveal"
-              >
-                <div class="icons p-7 flex justify-between">
-                  <h1 class="text-[#60f6d3]">FileIcon</h1>
-                  <div class="links flex space-x-2 text-[#8892b0]">
-                    <div class="github">
-                      <i class="fab fa-github text-xl hover:text-[#60f6d3]"></i>
-                    </div>
-                    <div class="link">
-                      <i
-                        class="fas fa-external-link-alt hover:text-[#60f6d3]"
-                      ></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="content p-7 flex flex-col space-y-5 font-medium">
-                  <h1 class="text-2xl">Time to have more fun</h1>
-                  <p class="text-sm text-[#8892b0]">
-                    Building a custom multisite compatible WordPress plugin to
-                    build global search with Algolia
-                  </p>
-                  <ul
-                    class="text-sm text-[#8892b0] flex self-start space-x-3 font-mono font-lighter"
-                  >
-                    <li>Next.js</li>
-                    <li>Tailwind CSS</li>
-                    <li>Firebase</li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                class="card h-80 w-80 bg-[#112240] shadow-lg text-[#ccd6f6] hover:text-[#60f6d3] scroll-reveal"
-              >
-                <div class="icons p-7 flex justify-between">
-                  <h1 class="text-[#60f6d3]">FileIcon</h1>
-                  <div class="links flex space-x-2 text-[#8892b0]">
-                    <div class="github">
-                      <i class="fab fa-github text-xl hover:text-[#60f6d3]"></i>
-                    </div>
-                    <div class="link">
-                      <i
-                        class="fas fa-external-link-alt hover:text-[#60f6d3]"
-                      ></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="content p-7 flex flex-col space-y-5 font-medium">
-                  <h1 class="text-2xl">Time to have more fun</h1>
-                  <p class="text-sm text-[#8892b0]">
-                    Building a custom multisite compatible WordPress plugin to
-                    build global search with Algolia
-                  </p>
-                  <ul
-                    class="text-sm text-[#8892b0] flex self-start space-x-3 font-mono font-lighter"
-                  >
-                    <li>Next.js</li>
-                    <li>Tailwind CSS</li>
-                    <li>Firebase</li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                class="card h-80 w-80 bg-[#112240] shadow-lg text-[#ccd6f6] hover:text-[#60f6d3] scroll-reveal"
-              >
-                <div class="icons p-7 flex justify-between">
-                  <h1 class="text-[#60f6d3]">FileIcon</h1>
-                  <div class="links flex space-x-2 text-[#8892b0]">
-                    <div class="github">
-                      <i class="fab fa-github text-xl hover:text-[#60f6d3]"></i>
-                    </div>
-                    <div class="link">
-                      <i
-                        class="fas fa-external-link-alt hover:text-[#60f6d3]"
-                      ></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="content p-7 flex flex-col space-y-5 font-medium">
-                  <h1 class="text-2xl">Time to have more fun</h1>
-                  <p class="text-sm text-[#8892b0]">
-                    Building a custom multisite compatible WordPress plugin to
-                    build global search with Algolia
-                  </p>
-                  <ul
-                    class="text-sm text-[#8892b0] flex self-start space-x-3 font-mono font-lighter"
-                  >
-                    <li>Next.js</li>
-                    <li>Tailwind CSS</li>
-                    <li>Firebase</li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                class="card h-80 w-80 bg-[#112240] shadow-lg text-[#ccd6f6] hover:text-[#60f6d3] scroll-reveal"
-              >
-                <div class="icons p-7 flex justify-between">
-                  <h1 class="text-[#60f6d3]">FileIcon</h1>
-                  <div class="links flex space-x-2 text-[#8892b0]">
-                    <div class="github">
-                      <i class="fab fa-github text-xl hover:text-[#60f6d3]"></i>
-                    </div>
-                    <div class="link">
-                      <i
-                        class="fas fa-external-link-alt hover:text-[#60f6d3]"
-                      ></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="content p-7 flex flex-col space-y-5 font-medium">
-                  <h1 class="text-2xl">Time to have more fun</h1>
-                  <p class="text-sm text-[#8892b0]">
-                    Building a custom multisite compatible WordPress plugin to
-                    build global search with Algolia
-                  </p>
-                  <ul
-                    class="text-sm text-[#8892b0] flex self-start space-x-3 font-mono font-lighter"
-                  >
-                    <li>Next.js</li>
-                    <li>Tailwind CSS</li>
-                    <li>Firebase</li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                class="card h-80 w-80 bg-[#112240] shadow-lg text-[#ccd6f6] hover:text-[#60f6d3] scroll-reveal"
-              >
-                <div class="icons p-7 flex justify-between">
-                  <h1 class="text-[#60f6d3]">FileIcon</h1>
-                  <div class="links flex space-x-2 text-[#8892b0]">
-                    <div class="github">
-                      <i class="fab fa-github text-xl hover:text-[#60f6d3]"></i>
-                    </div>
-                    <div class="link">
-                      <i
-                        class="fas fa-external-link-alt hover:text-[#60f6d3]"
-                      ></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="content p-7 flex flex-col space-y-5 font-medium">
-                  <h1 class="text-2xl">Time to have more fun</h1>
-                  <p class="text-sm text-[#8892b0]">
-                    Building a custom multisite compatible WordPress plugin to
-                    build global search with Algolia
-                  </p>
-                  <ul
-                    class="text-sm text-[#8892b0] flex self-start space-x-3 font-mono font-lighter"
-                  >
-                    <li>Next.js</li>
-                    <li>Tailwind CSS</li>
-                    <li>Firebase</li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                class="card h-80 w-80 bg-[#112240] shadow-lg text-[#ccd6f6] hover:text-[#60f6d3] scroll-reveal"
-              >
-                <div class="icons p-7 flex justify-between">
-                  <h1 class="text-[#60f6d3]">FileIcon</h1>
-                  <div class="links flex space-x-2 text-[#8892b0]">
-                    <div class="github">
-                      <i class="fab fa-github text-xl hover:text-[#60f6d3]"></i>
-                    </div>
-                    <div class="link">
-                      <i
-                        class="fas fa-external-link-alt hover:text-[#60f6d3]"
-                      ></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="content p-7 flex flex-col space-y-5 font-medium">
-                  <h1 class="text-2xl">Time to have more fun</h1>
-                  <p class="text-sm text-[#8892b0]">
-                    Building a custom multisite compatible WordPress plugin to
-                    build global search with Algolia
-                  </p>
-                  <ul
-                    class="text-sm text-[#8892b0] flex self-start space-x-3 font-mono font-lighter"
-                  >
-                    <li>Next.js</li>
-                    <li>Tailwind CSS</li>
-                    <li>Firebase</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="what-next flex flex-col items-center scroll-reveal" id="contact">
+        <h5 class="text-lg text-[#64ffda]">04. What's Next?</h5>
+        <div class="get-in-touch py-10 flex flex-col items-center space-x-5 space-y-5">
+          <h1 class="md:text-6xl text-4xl text-[#ccd6f6] font-medium text-center md:text-left">
+            Get in Touch
+          </h1>
+          <p class="text-center text-[#8892b0] md:w-1/2">
+            Although I’m not currently looking for any new opportunities, my
+            inbox is always open. Whether you have a question or just want to
+            say hi, I’ll try my best to get back to you!
+          </p>
+          <a href="mailto:arshadaman202@gmail.com"><button
+              class="py-3 px-6 text-lg border-2 border-[#64ffda] text-[#64ffda] rounded mt-4 hover:bg-[#133040]">
+              Say Hello
+            </button></a>
         </div>
+      </div>
 
-        <div
-          class="what-next flex flex-col items-center scroll-reveal"
-          id="contact"
-        >
-          <h5 class="text-lg text-[#64ffda]">04. What's Next?</h5>
-          <div
-            class="get-in-touch py-10 flex flex-col items-center space-x-5 space-y-5"
-          >
-            <h1
-              class="md:text-6xl text-4xl text-[#ccd6f6] font-medium text-center md:text-left"
-            >
-              Get in Touch
-            </h1>
-            <p class="text-center text-[#8892b0] md:w-1/2">
-              Although I’m not currently looking for any new opportunities, my
-              inbox is always open. Whether you have a question or just want to
-              say hi, I’ll try my best to get back to you!
-            </p>
-            <a href="mailto:arshadaman202@gmail.com"
-              ><button
-                class="py-3 px-6 text-lg border-2 border-[#64ffda] text-[#64ffda] rounded mt-4 hover:bg-[#133040]"
-              >
-                Say Hello
-              </button></a
-            >
-          </div>
-        </div>
+      <footer class="flex flex-col items-center hover:text-[#64ffda] text-[#8892b0] pt-28">
+        <p>Built by Arshad Aman</p>
+        <p>Thanks for visiting my website</p>
+      </footer>
+    </section>
+  </div>
+  <script src="https://kit.fontawesome.com/28da159db2.js" crossorigin="anonymous" type="module"></script>
+</body>
 
-        <footer
-          class="flex flex-col items-center hover:text-[#64ffda] text-[#8892b0] pt-28"
-        >
-          <p>Built by Arshad Aman</p>
-          <p>Thanks for visiting my website</p>
-        </footer>
-      </section>
-    </div>
-    <script
-      src="https://kit.fontawesome.com/28da159db2.js"
-      crossorigin="anonymous"
-      type="module"
-    ></script>
-  </body>
 </html>

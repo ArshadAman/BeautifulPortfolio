@@ -125,24 +125,6 @@ function addObserver(element) {
   observer.observe(element);
 }
 
-// async function showLoadingScreen(){
-//   let screen = document.getElementById('loadingScreen');
-//   let leftline = document.getElementById('leftline');
-//   let rightline = document.getElementById('rightline');
-//   document.onload = screen.style.display = 'flex';
-//   document.onload = leftline.style.display = 'none';
-//   document.onload = rightline.style.display = 'none';
-//   let body = document.querySelector('body');
-//   body.style.overflow = "hidden"
-//   await new Promise(resolve => setTimeout(resolve, 800));
-//   screen.style.display = "none";
-//   // document.getElementById('main').style.display = "block";
-//   document.onload = leftline.style.display = 'flex';
-//   document.onload = rightline.style.display = 'flex';
-//   document.querySelector('body').style.overflow = "auto";
-// }
-// showLoadingScreen()
-
 
 function blueHide(){
   document.getElementById('hideBlue').addEventListener('click', (e)=>{
